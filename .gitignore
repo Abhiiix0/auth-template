@@ -1,0 +1,10 @@
+# Good: only ignores node_modules inside the folders
+/frontend/node_modules/
+/backend/node_modules/
+
+# Or simply:
+node_modules/
+.next/
+build/
+dist/
+.env
