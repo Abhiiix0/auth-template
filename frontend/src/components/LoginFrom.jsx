@@ -50,7 +50,7 @@ const LoginForm = () => {
         </div>
 
         {/* Password */}
-        <div>
+        <div className="flex flex-col">
           <div className="relative">
             <input
               {...register("password", {
@@ -77,6 +77,12 @@ const LoginForm = () => {
               {errors.password.message}
             </span>
           )}
+          <Link
+            href="/forgot-password"
+            className="text-sm mt-2 text-right text-blue-500 hover:underline"
+          >
+            Forgot password?
+          </Link>
         </div>
 
         {/* Submit */}
@@ -91,7 +97,7 @@ const LoginForm = () => {
       <p className="mt-6 text-center text-gray-500">
         Don't have an account?
         <Link
-          href="/registration"
+          href="/register"
           className="text-blue-500 font-semibold ml-1 hover:underline"
         >
           Register

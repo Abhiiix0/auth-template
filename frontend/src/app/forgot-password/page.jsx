@@ -35,7 +35,7 @@ const page = () => {
                 },
               })}
               placeholder="Enter your email"
-              type="email"
+              type="text"
               aria-label="Email"
               className="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             />
